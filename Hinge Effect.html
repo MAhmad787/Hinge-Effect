@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" />
+    <title>Shake Drop Fall Down</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: linear-gradient(80deg, black, whitesmoke, grey);  
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100vh;
+          
+        }
+        .a1 {
+            background-color: #2980b9;
+            font-weight: 200;
+            font-family: 'Arial Narrow', sans-serif;
+            font-size: 3.5rem;
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 5px;
+            transform-origin: left top;
+            animation: hinge1 4s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+        @keyframes hinge1 {
+            20%, 60% {
+                transform: rotate(70deg);
+            }
+            40%, 80% {
+                transform: rotate(55deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-600px);
+                opacity: 0;
+            }
+        }
+        .a2 {
+            background-color: #2980b9;
+            font-weight: 200;
+            font-family: 'Arial Narrow', sans-serif;
+            font-size: 3.5rem;
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 5px;
+            transform-origin: top right;
+            animation: hinge2 4s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+        @keyframes hinge2 {
+            20%, 60% {
+                transform: rotate(70deg);
+            }
+            40%, 80% {
+                transform: rotate(55deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(600px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">
+        Assalam o Alaikum
+    </div>
+    <div class="a2">
+        Walaikum Assalam
+    </div>
+</body>
+</html>
